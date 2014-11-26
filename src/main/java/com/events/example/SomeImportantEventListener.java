@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationListener;
  */
 
 public class SomeImportantEventListener implements ApplicationListener<SomeImportantEvent> {
+
+    //@Async to be asynchronous handle event
     @Override
     public void onApplicationEvent(SomeImportantEvent someImportantEvent) {
         System.out.print("I just got a event "+someImportantEvent.getTitle());
